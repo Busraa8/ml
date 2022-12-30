@@ -33,7 +33,7 @@ def main():
         plt.subplot(2, 5, i + 1)
         plt.imshow(centers_10[i].reshape((28, 28)))
     plt.suptitle('Visualize 10 centers')
-    plt.show()
+    plt.savefig("Option B")
 
     k_vals = [2, 4, 8, 16, 32, 64]
     train_errors = np.zeros(len(k_vals))
@@ -50,7 +50,7 @@ def main():
     plt.legend()
     plt.xlabel("k")
     plt.ylabel("Error")
-    plt.show()
+    plt.savefig("Option C")
 
 
 if __name__ == "__main__":
